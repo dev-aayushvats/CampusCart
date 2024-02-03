@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Vendor Dashboard</title>
     <style>
         * {
@@ -51,7 +52,7 @@
         }
         .features{
             margin-top: 100px;
-            margin-left: 20px;
+            padding-left: 20px;
             list-style: none;
         }
         .features a{
@@ -59,9 +60,16 @@
             color: black;
         }
         .features li{
-            margin:10px 0px 10px 0px;
+            padding:10px 0px;
+            font-weight: 500;
         }
-        
+        .current{
+            background-color: rgba(0, 157, 255, 0.37);
+        }
+        .content{
+            margin-top: 60px;
+            padding: 20px;
+        }
 
     </style>
 </head>
@@ -83,12 +91,16 @@
         <section class="sidebar">
             <ul class="features">
                 <!-- Features go here -->
+                <li class="current"><a href="#">Dashboard</a></li>
                 <li><a href="#">Inventory</a></li>
                 <li><a href="#">Student Wishlist</a></li>
             </ul>
         </section>
         <section class="content">
-
+            <h2>Welcome, Mr. Vendor</h2>
+            <div class="stockout">
+                
+            </div>
         </section>
     </main>
 </body>
