@@ -42,14 +42,19 @@
       width: 200px;
       height: 100vh;
       position: fixed;
-      top: 0;
+      top: 50%;
       left: 0;
+      transform: translateY(-50%);
       z-index: 999; /* Ensure the sidebar appears below the header */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .sidebar ul {
       list-style-type: none;
       padding: 0;
+      text-align: left; /* Align text to the left */
     }
 
     .sidebar ul li {
