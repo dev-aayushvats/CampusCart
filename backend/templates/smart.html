@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Vendor Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar {
+            height: 60px;
+            background-color: aliceblue;
+            display: flex;
+            width: 100vw;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.137);
+            position: absolute;
+        }
+
+        .logo {
+            font-family: 'Protest Riot', sans-serif;
+            color: rgb(26, 26, 26);
+        }
+
+        .profile {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            background-image: url(https://static.thenounproject.com/png/854888-200.png);
+            background-size: cover;
+            background-color: white;
+        }
+
+        main {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: aliceblue;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .features {
+            margin-top: 100px;
+            padding-left: 20px;
+            list-style: none;
+        }
+
+        .features a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .features li {
+            padding: 10px;
+            background-color: rgba(0, 157, 255, 0.1);
+            border-radius: 5px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .features li.current,
+        .features li:hover {
+            background-color: rgba(0, 157, 255, 0.3);
+        }
+
+        .content {
+            margin-top: 60px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .content h2{
+            margin-bottom: 30px;
+        }
+        .option{
+            background-color: rgb(232, 232, 232);
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+        }
+        .choose{
+            display: flex;
+            gap: 30px;
+        }
+        .option:hover{
+            box-shadow: 0px 0px 10px rgba(0, 157, 255, 0.3);
+            transition-duration: 0.5s;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="CC">
+            <!-- LOGO goes here -->
+            <h1 class="logo">CampusCart</h1>
+        </div>
+        <ul class="tabs">
+            <!-- navbar tabs go here -->
+        </ul>
+        <div class="profile">
+            <!-- User profile here -->
+        </div>
+    </nav>
+    <main>
+        <section class="sidebar">
+            <ul class="features">
+                <!-- Features go here -->
+                <li><a href="#">Dashboard</a></li>
+                <li class="current"><a href="smart.html">Student Market</a></li>
+                <li><a href="gstores.html">General Stores</a></li>
+                <li><a href="cant.html">Canteens</a></li>
+            </ul>
+        </section>
+        <section class="content">
+            <h2>How would you like to proceed?</h2>
+            <div class="choose">
+                <div class="option">
+                    <h3>BUY</h3>
+                    <p>Check out what other students are selling</p>
+                </div>
+                <div class="option">
+                    <h3>SELL</h3>
+                    <p>Sell something you don't need anymore</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
