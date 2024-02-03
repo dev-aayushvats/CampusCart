@@ -51,18 +51,13 @@ def login():
 def student_mart():
     return render_template('smart.html')
 
-def general_stores():
-    return render_template('gstores.html')
-
 @app.route('/general_stores')
 def general_stores():
     return render_template('gstores.html')
 
-def student_mart():
-    return render_template('smart.html')
-
-
-
+@app.route('/dashboard')
+def dashboard():
+    return render_template('dashstudent.html')
 
 if __name__ == "__main__":
     app.run(debug=True,port=8000)

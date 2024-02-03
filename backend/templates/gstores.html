@@ -159,7 +159,9 @@
         <section class="sidebar">
             <ul class="features">
                 <!-- Features go here -->
-                <li><a href="dashstudent.html">Dashboard</a></li>
+                <form method="post" action="/dashboard">
+                    <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+                </form>
                 <form method="post" action="/student_market">
                     <li><a href="{{ url_for('student_mart') }}">Student Market</a></li>
                 </form>
