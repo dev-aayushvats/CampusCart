@@ -82,14 +82,34 @@
         .content {
             margin-top: 60px;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
         }
-
-        .stockoutlist {
+        .content h2{
+            margin-bottom: 30px;
+        }
+        .option{
+            background-color: rgb(232, 232, 232);
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+        }
+        .choose{
             display: flex;
             gap: 30px;
         }
+        .option:hover{
+            box-shadow: 0px 0px 10px rgba(0, 157, 255, 0.3);
+            transition-duration: 0.5s;
+        }
+        .inventorylist {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            position: fixed;
+        }
 
-        .so_card {
+        .in_card {
             width: 200px;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -97,7 +117,7 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        .so_card-image {
+        .in_card-image {
             width: 100%;
             height: 150px;
             background-color: #f4f4f4;
@@ -105,23 +125,19 @@
             background-position: center;
         }
 
-        .so_card-content {
+        .in_card-content {
             padding: 15px;
         }
 
-        .so_card-content h3 {
+        .in_card-content h3 {
             font-size: 15px;
         }
 
-        .so_card-content p {
+        .in_card-content p {
             font-size: 12px;
         }
-        .expenses{
-            margin-top: 30px;
-        }
-        .itemlist{
-            display: flex;
-            gap: 30px;
+        .content h2{
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -143,96 +159,118 @@
         <section class="sidebar">
             <ul class="features">
                 <!-- Features go here -->
-                <li class="current"><a href="#">Dashboard</a></li>
-                <form method="post" action="/student_market">
-                    <li><a href="{{ url_for('student_mart') }}">Student Market</a></li>
-                </form>
-                <form method="post" action="/general_stores">
-                    <li><a href="{{ url_for('general_stores') }}">General Stores</a></li>
-                </form>
-                <form method="post" action="/canteens">
-                    <li><a href="cant.html">Canteens</a></li>
-                </form>
+                <li><a href="dashstudent.html">Dashboard</a></li>
+                <li><a href="smart.html">Student Market</a></li>
+                <li class="current"><a href="gstores.html">General Stores</a></li>
+                <li><a href="cant.html">Canteens</a></li>
             </ul>
         </section>
         <section class="content">
-            <h2>Welcome, Some Student</h2>
-            <div class="stockout">
-                <h3>Popular Today!</h3>
-                <div class="stockoutlist">
-                    <div class="so_card">
+            <h2>What would you like to get?</h2>
+            <div class="inventory">
+                <div class="inventorylist">
+                    <div class="in_card">
                         <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
-                            class="so_card-image">
-                        <div class="so_card-content">
+                            class="in_card-image">
+                        <div class="in_card-content">
                             <h3>Curd</h2>
                                 <p>Remaining Quantity: 10</p>
                         </div>
                     </div>
-                    <div class="so_card">
+                    <div class="in_card">
                         <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
-                            class="so_card-image">
-                        <div class="so_card-content">
+                            class="in_card-image">
+                        <div class="in_card-content">
                             <h3>Curd</h2>
                                 <p>Remaining Quantity: 10</p>
                         </div>
                     </div>
-                    <div class="so_card">
+                    <div class="in_card">
                         <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
-                            class="so_card-image">
-                        <div class="so_card-content">
+                            class="in_card-image">
+                        <div class="in_card-content">
                             <h3>Curd</h2>
                                 <p>Remaining Quantity: 10</p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="expenses">
-                <h3>Last Month Expenses</h3>
-                <p>Total : Rs 2340</p>
-                <div class="itemlist">
-                    <div class="so_card">
+                    <div class="in_card">
                         <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
-                            class="so_card-image">
-                        <div class="so_card-content">
+                            class="in_card-image">
+                        <div class="in_card-content">
                             <h3>Curd</h2>
-                                <p>Quantity: 10</p>
-                                <p>Total Cost: Rs 100</p>
+                                <p>Remaining Quantity: 10</p>
                         </div>
                     </div>
-                    <div class="so_card">
+                    <div class="in_card">
                         <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
-                            class="so_card-image">
-                        <div class="so_card-content">
+                            class="in_card-image">
+                        <div class="in_card-content">
                             <h3>Curd</h2>
-                                <p>Quantity: 10</p>
-                                <p>Total Cost: Rs 100</p>
+                                <p>Remaining Quantity: 10</p>
                         </div>
                     </div>
-                    <div class="so_card">
+                    <div class="in_card">
                         <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
-                            class="so_card-image">
-                        <div class="so_card-content">
+                            class="in_card-image">
+                        <div class="in_card-content">
                             <h3>Curd</h2>
-                                <p>Quantity: 10</p>
-                                <p>Total Cost: Rs 100</p>
+                                <p>Remaining Quantity: 10</p>
                         </div>
                     </div>
-                    <div class="so_card">
+                    <div class="in_card">
                         <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
-                            class="so_card-image">
-                        <div class="so_card-content">
+                            class="in_card-image">
+                        <div class="in_card-content">
                             <h3>Curd</h2>
-                                <p>Quantity: 10</p>
-                                <p>Total Cost: Rs 100</p>
+                                <p>Remaining Quantity: 10</p>
                         </div>
                     </div>
-                    <div class="so_card">
+                    <div class="in_card">
                         <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
-                            class="so_card-image">
-                        <div class="so_card-content">
+                            class="in_card-image">
+                        <div class="in_card-content">
                             <h3>Curd</h2>
-                                <p>Quantity: 10</p>
-                                <p>Total Cost: Rs 100</p>
+                                <p>Remaining Quantity: 10</p>
+                        </div>
+                    </div>
+                    <div class="in_card">
+                        <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
+                            class="in_card-image">
+                        <div class="in_card-content">
+                            <h3>Curd</h2>
+                                <p>Remaining Quantity: 10</p>
+                        </div>
+                    </div>
+                    <div class="in_card">
+                        <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
+                            class="in_card-image">
+                        <div class="in_card-content">
+                            <h3>Curd</h2>
+                                <p>Remaining Quantity: 10</p>
+                        </div>
+                    </div>
+                    <div class="in_card">
+                        <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
+                            class="in_card-image">
+                        <div class="in_card-content">
+                            <h3>Curd</h2>
+                                <p>Remaining Quantity: 10</p>
+                        </div>
+                    </div>
+                    <div class="in_card">
+                        <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
+                            class="in_card-image">
+                        <div class="in_card-content">
+                            <h3>Curd</h2>
+                                <p>Remaining Quantity: 10</p>
+                        </div>
+                    </div>
+                    <div class="in_card">
+                        <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
+                            class="in_card-image">
+                        <div class="in_card-content">
+                            <h3>Curd</h2>
+                                <p>Remaining Quantity: 10</p>
                         </div>
                     </div>
                 </div>
@@ -240,4 +278,5 @@
         </section>
     </main>
 </body>
+
 </html>
