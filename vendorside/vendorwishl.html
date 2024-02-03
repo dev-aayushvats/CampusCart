@@ -83,38 +83,30 @@
             margin-top: 60px;
             padding: 20px;
         }
-
-        .stockoutlist {
+        .needs{
+            width: 50vw;
+            list-style: none;
+        }
+        .todo-item {
             display: flex;
-            gap: 30px;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            width: 50%;
         }
 
-        .so_card {
-            width: 200px;
-            border: 1px solid #ccc;
+        .todo-text {
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        .complete-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
             border-radius: 5px;
-            overflow: hidden;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .so_card-image {
-            width: 100%;
-            height: 150px;
-            background-color: #f4f4f4;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .so_card-content {
-            padding: 15px;
-        }
-
-        .so_card-content h3 {
-            font-size: 15px;
-        }
-
-        .so_card-content p {
-            font-size: 12px;
+            padding: 5px 10px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -136,42 +128,28 @@
         <section class="sidebar">
             <ul class="features">
                 <!-- Features go here -->
-                <li class="current"><a href="#">Dashboard</a></li>
+                <li><a href="dashvendor.html">Dashboard</a></li>
                 <li><a href="vendorinventory.html">Inventory</a></li>
-                <li><a href="vendorwishl.html">Student Wishlist</a></li>
+                <li class="current"><a href="#">Student Wishlist</a></li>
             </ul>
         </section>
         <section class="content">
-            <h2>Welcome, Mr. Vendor</h2>
-            <div class="stockout">
-                <h3>Running Out Soon!</h3>
-                <div class="stockoutlist">
-                    <div class="so_card">
-                        <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
-                            class="so_card-image">
-                        <div class="so_card-content">
-                            <h3>Curd</h2>
-                                <p>Remaining Quantity: 10</p>
-                        </div>
-                    </div>
-                    <div class="so_card">
-                        <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
-                            class="so_card-image">
-                        <div class="so_card-content">
-                            <h3>Curd</h2>
-                                <p>Remaining Quantity: 10</p>
-                        </div>
-                    </div>
-                    <div class="so_card">
-                        <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
-                            class="so_card-image">
-                        <div class="so_card-content">
-                            <h3>Curd</h2>
-                                <p>Remaining Quantity: 10</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h2>Student Requirements</h2>
+            <ul class="needs">
+                <li><div class="todo-item">
+                    <span class="todo-text">Dairy Milk Mehengi Waali</span>
+                    <button class="complete-button">Mark as Complete</button>
+                </div></li>
+                <li><div class="todo-item">
+                    <span class="todo-text">Dairy Milk Mehengi Waali</span>
+                    <button class="complete-button">Mark as Complete</button>
+                </div></li>
+                <li><div class="todo-item">
+                    <span class="todo-text">Dairy Milk Mehengi Waali</span>
+                    <button class="complete-button">Mark as Complete</button>
+                </div></li>
+
+            </ul>
         </section>
     </main>
 </body>

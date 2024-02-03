@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Vendor Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar {
+            height: 60px;
+            background-color: aliceblue;
+            display: flex;
+            width: 100vw;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.137);
+            position: absolute;
+        }
+
+        .logo {
+            font-family: 'Protest Riot', sans-serif;
+            color: rgb(26, 26, 26);
+        }
+
+        .profile {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            background-image: url(https://static.thenounproject.com/png/854888-200.png);
+            background-size: cover;
+            background-color: white;
+        }
+
+        main {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: aliceblue;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .features {
+            margin-top: 100px;
+            padding-left: 20px;
+            list-style: none;
+        }
+
+        .features a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .features li {
+            padding: 10px;
+            background-color: rgba(0, 157, 255, 0.1);
+            border-radius: 5px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .features li.current,
+        .features li:hover {
+            background-color: rgba(0, 157, 255, 0.3);
+        }
+
+        .content {
+            margin-top: 60px;
+            padding: 20px;
+            height: calc(100vh - 60px);
+            overflow-y: auto;
+        }
+
+        .inventorylist {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            position: fixed;
+        }
+
+        .in_card {
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .in_card-image {
+            width: 100%;
+            height: 150px;
+            background-color: #f4f4f4;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .in_card-content {
+            padding: 15px;
+        }
+
+        .in_card-content h3 {
+            font-size: 15px;
+        }
+
+        .in_card-content p {
+            font-size: 12px;
+        }
+        .content h2{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="CC">
+            <!-- LOGO goes here -->
+            <h1 class="logo">CampusCart</h1>
+        </div>
+        <ul class="tabs">
+            <!-- navbar tabs go here -->
+        </ul>
+        <div class="profile">
+            <!-- User profile here -->
+        </div>
+    </nav>
+    <main>
+        <section class="sidebar">
+            <ul class="features">
+                <!-- Features go here -->
+                <li><a href="dashvendor.html">Dashboard</a></li>
+                <li class="current"><a href="#">Inventory</a></li>
+                <li><a href="vendorwishl.html">Student Wishlist</a></li>
+            </ul>
+        </section>
+        <section class="content">
+            <h2>Your Inventory</h2>
+            <div class="inventory">
+                <div class="inventorylist">
+                    <div class="in_card">
+                        <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
+                            class="in_card-image">
+                        <div class="in_card-content">
+                            <h3>Curd</h2>
+                                <p>Remaining Quantity: 10</p>
+                        </div>
+                    </div>
+                    <div class="in_card">
+                        <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
+                            class="in_card-image">
+                        <div class="in_card-content">
+                            <h3>Curd</h2>
+                                <p>Remaining Quantity: 10</p>
+                        </div>
+                    </div>
+                    <div class="in_card">
+                        <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
+                            class="in_card-image">
+                        <div class="in_card-content">
+                            <h3>Curd</h2>
+                                <p>Remaining Quantity: 10</p>
+                        </div>
+                    </div>
+                    <div class="in_card">
+                        <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
+                            class="in_card-image">
+                        <div class="in_card-content">
+                            <h3>Curd</h2>
+                                <p>Remaining Quantity: 10</p>
+                        </div>
+                    </div>
+                    <div class="in_card">
+                        <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
+                            class="in_card-image">
+                        <div class="in_card-content">
+                            <h3>Curd</h2>
+                                <p>Remaining Quantity: 10</p>
+                        </div>
+                    </div>
+                    <div class="in_card">
+                        <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
+                            class="in_card-image">
+                        <div class="in_card-content">
+                            <h3>Curd</h2>
+                                <p>Remaining Quantity: 10</p>
+                        </div>
+                    </div>
+                    <div class="in_card">
+                        <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
+                            class="in_card-image">
+                        <div class="in_card-content">
+                            <h3>Curd</h2>
+                                <p>Remaining Quantity: 10</p>
+                        </div>
+                    </div>
+                    <div class="in_card">
+                        <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
+                            class="in_card-image">
+                        <div class="in_card-content">
+                            <h3>Curd</h2>
+                                <p>Remaining Quantity: 10</p>
+                        </div>
+                    </div>
+                    <div class="in_card">
+                        <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
+                            class="in_card-image">
+                        <div class="in_card-content">
+                            <h3>Curd</h2>
+                                <p>Remaining Quantity: 10</p>
+                        </div>
+                    </div>
+                    <div class="in_card">
+                        <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
+                            class="in_card-image">
+                        <div class="in_card-content">
+                            <h3>Curd</h2>
+                                <p>Remaining Quantity: 10</p>
+                        </div>
+                    </div>
+                    <div class="in_card">
+                        <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
+                            class="in_card-image">
+                        <div class="in_card-content">
+                            <h3>Curd</h2>
+                                <p>Remaining Quantity: 10</p>
+                        </div>
+                    </div>
+                    <div class="in_card">
+                        <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
+                            class="in_card-image">
+                        <div class="in_card-content">
+                            <h3>Curd</h2>
+                                <p>Remaining Quantity: 10</p>
+                        </div>
+                    </div>
+                    <div class="in_card">
+                        <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
+                            class="in_card-image">
+                        <div class="in_card-content">
+                            <h3>Curd</h2>
+                                <p>Remaining Quantity: 10</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
