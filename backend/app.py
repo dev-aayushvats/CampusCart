@@ -41,11 +41,15 @@ def login():
         cur.close()
 
         if user and user[1] == passwd:
-            return render_template("dashstudent.html")
+            return redirect(url_for('dashboard'))
         else:
             return render_template("login.html", logintry="Login Failure")
     else:
         return render_template("login.html")
+
+@app.route('/dashboard')
+def dashboard():
+    return render_template('dashstudent.html')
 
 @app.route('/student_mart')
 def student_mart():
@@ -55,9 +59,6 @@ def student_mart():
 def general_stores():
     return render_template('gstores.html')
 
-@app.route('/dashboard')
-def dashboard():
-    return render_template('dashstudent.html')
 
 if __name__ == "__main__":
     app.run(debug=True,port=8000)
