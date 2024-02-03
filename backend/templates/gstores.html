@@ -160,9 +160,12 @@
             <ul class="features">
                 <!-- Features go here -->
                 <li><a href="dashstudent.html">Dashboard</a></li>
-                <li><a href="smart.html">Student Market</a></li>
+                <form method="post" action="/student_market">
+                    <li><a href="{{ url_for('student_mart') }}">Student Market</a></li>
+                </form>
                 <li class="current"><a href="gstores.html">General Stores</a></li>
                 <li><a href="cant.html">Canteens</a></li>
+                <!-- <li><a href="smart.html">Student Market</a></li> -->
             </ul>
         </section>
         <section class="content">
