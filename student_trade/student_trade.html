@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Montserrat";
+            font-size: 18px;
+        }
+
+        .navbar {
+            height: 60px;
+            background-color: aliceblue;
+            display: flex;
+            width: 100vw;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.252);
+            position: absolute;
+        }
+
+        .logo {
+            font-family: 'Protest Riot', sans-serif;
+            color: rgb(26, 26, 26);
+        }
+
+        main {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: aliceblue;
+            height: 100vh;
+        }
+
+        .menu {
+            background-color: white;
+            border-radius: 4px;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: -7px 9px 17px 0px #00000017;
+        }
+
+        li a {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: black;
+        }
+
+        nav {
+            position: relative;
+        }
+
+        .icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+            background-image: url(https://cdn-icons-png.flaticon.com/512/1250/1250689.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 50%;
+            cursor: pointer;
+            box-shadow: 0px 0px 17px 0px #00000017;
+        }
+
+        .icon.close {
+            transform: translateY(-50%) rotate(360deg);
+            background-image: url(https://cdn-icons-png.flaticon.com/128/2732/2732657.png);
+        }
+
+        ul {
+            overflow: hidden;
+            transform: translateX(50px);
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.5s ease;
+        }
+
+        nav.show ul {
+            transform: translate(0px);
+
+            padding-bottom: 5px;
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        nav {
+            position: absolute;
+            top: 6px;
+            right: 100px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+
+            li a {
+                padding: 5px 10px;
+            }
+
+            nav ul {
+                padding: 15px;
+            }
+
+            nav.show ul {
+                width: 260px;
+            }
+
+            .icon {
+                width: 45px;
+                height: 45px;
+                right: -50px;
+            }
+
+            nav {
+                top: 10px;
+                right: 60px;
+            }
+        }
+    </style>
+    <!-- Add your additional stylesheets or scripts here -->
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="CC">
+            <!-- LOGO goes here -->
+            <h1 class="logo">CampusCart</h1>
+        </div>
+        <ul class="tabs">
+            <!-- navbar tabs go here -->
+        </ul>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Edit Profile</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Sign Out</a></li>
+        </ul>
+        <div class="icon"></div>
+    </nav>
+    <main>
+        <section class="sidebar">
+            <ul class="features">
+                <!-- Features go here -->
+            </ul>
+        </section>
+        <section class="content">
+
+        </section>
+    </main>
+</body>
+
+<script>
+    const icon = document.querySelector(".icon");
+    const nav = document.querySelector("nav");
+    icon.addEventListener("click", () => {
+        icon.classList.toggle("close");
+        nav.classList.toggle("show");
+    });
+</script>
+
+</html>
