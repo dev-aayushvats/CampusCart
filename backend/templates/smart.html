@@ -125,8 +125,11 @@
                 <!-- Features go here -->
                 <li><a href="#">Dashboard</a></li>
                 <li class="current"><a href="smart.html">Student Market</a></li>
-                <li><a href="gstores.html">General Stores</a></li>
+                <form method="post" action="/general_stores">
+                    <li><a href="{{ url_for('general_stores') }}">General Stores</a></li>
+                </form>
                 <li><a href="cant.html">Canteens</a></li>
+                <!-- <li><a href="gstores.html">General Stores</a></li> -->
             </ul>
         </section>
         <section class="content">
