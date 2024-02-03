@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="menu.css">
     <style>
         * {
@@ -21,7 +22,7 @@
         }
 
         .navbar {
-            height: 60px;
+            height: 67px;
             background-color: aliceblue;
             display: flex;
             width: 100vw;
@@ -99,15 +100,14 @@
 
         nav.show ul {
             transform: translate(0px);
-
-            padding-bottom: 5px;
+            padding-bottom: 2px;
             opacity: 1;
             pointer-events: all;
         }
 
         nav {
             position: absolute;
-            top: 6px;
+            top: 8px;
             right: 100px;
         }
 
@@ -142,44 +142,128 @@
     </style>
     <!-- Add your additional stylesheets or scripts here -->
 </head>
-
-<body>
-    <div class="navbar">
-        <div class="CC">
-            <!-- LOGO goes here -->
-            <h1 class="logo">CampusCart</h1>
-        </div>
-        <ul class="tabs">
-            <!-- navbar tabs go here -->
-        </ul>
+<div class="navbar">
+    <div class="CC">
+        <!-- LOGO goes here -->
+        <h1 class="logo">CampusCart</h1>
     </div>
-    <nav>
-        <ul class="menu">
-            <li><a href="#">Edit Profile</a></li>
+    <ul class="tabs">
+        <!-- navbar tabs go here -->
+    </ul>
+</div>
+<nav>
+    <ul class="menu">
+        <li><a href="#">Edit Profile</a></li>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Sign Out</a></li>
+    </ul>
+    <div class="icon"></div>
+</nav>
+<main class="stay">
+    <section class="sidebar">
+        <ul class="features">
+            <!-- Features go here -->
             <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Sign Out</a></li>
+            <li class="current"><a href="smart.html">Student Market</a></li>
+            <li><a href="gstores.html">General Stores</a></li>
+            <li><a href="cant.html">Canteens</a></li>
         </ul>
-        <div class="icon"></div>
-    </nav>
-    <main>
-        <section class="sidebar">
-            <ul class="features">
-                <!-- Features go here -->
-            </ul>
-        </section>
-        <section class="content">
+    </section>
+    <section class="pb-5 posts">
+        <div class="container text-center">
+            <!-- Masonry grid -->
+            <div class="gallery-wrapper side">
+                <!-- Grid sizer -->
+                <div class="grid-sizer col-lg-3 col-md-5"></div>
+                
+                <!-- Grid item -->
+                <div class="col-lg-6 col-md-6 grid-item mb-6 img-fluid w-50 mb-3 img-thumbnail shadow-sm rounded-0">
+                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="https://cdn.bestadviser.in/reviews/90/48/9048e60e041e69456bf16cf6573ffe02.jpg" alt="">
+                    <h2 class="h4">Induction</h2>
+                    <p class="small text-muted font-italic">Selling a induction which is in perfectly good condition</p>
+                </div>
+                
+                <!-- Grid item -->
+                <div class="col-lg-6 col-md-6 grid-item mb-6 img-fluid w-50 mb-3 img-thumbnail shadow-sm rounded-0">
+                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="https://i.pinimg.com/474x/8a/43/b8/8a43b82218e3db4da606977cd68d8cee--electronic-items-kitchen-appliances.jpg" alt="">
+                    <h2 class="h4">Electric Appliance</h2>
+                    <p class="small text-muted font-italic">No clue what itst called but if you wanna buy be my guest!</p>
+                </div>
+                
+                <!-- Grid item -->
+                <div class="col-lg-6 col-md-6 grid-item mb-6 img-fluid w-50 mb-3 img-thumbnail shadow-sm rounded-0">
+                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="https://cdn.bestadviser.in/reviews/90/48/9048e60e041e69456bf16cf6573ffe02.jpg" alt="">
+                    <h2 class="h4">Induction</h2>
+                    <p class="small text-muted font-italic">Selling a induction which is in perfectly good condition</p>
+                </div>
+                <!-- Grid item -->
+                <div class="col-lg-6 col-md-6 grid-item mb-6 img-fluid w-50 mb-3 img-thumbnail shadow-sm rounded-0">
+                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="https://cdn.bestadviser.in/reviews/90/48/9048e60e041e69456bf16cf6573ffe02.jpg" alt="">
+                    <h2 class="h4">Induction</h2>
+                    <p class="small text-muted font-italic">Selling a induction which is in perfectly good condition</p>
+                </div>
+                
+                <!-- Grid item -->
+                <div class="col-lg-6 col-md-6 grid-item mb-6 img-fluid w-50 mb-3 img-thumbnail shadow-sm rounded-0">
+                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="https://cdn.bestadviser.in/reviews/90/48/9048e60e041e69456bf16cf6573ffe02.jpg" alt="">
+                    <h2 class="h4">Induction</h2>
+                    <p class="small text-muted font-italic">Selling a induction which is in perfectly good condition</p>
+                </div>
+                
+                <!-- Grid item -->
+                <div class="col-lg-6 col-md-6 grid-item mb-6 img-fluid w-50 mb-3 img-thumbnail shadow-sm rounded-0">
+                    <img class="img-fluid w-100 mb-3 img-thumbnail shadow-sm rounded-0" src="https://cdn.bestadviser.in/reviews/90/48/9048e60e041e69456bf16cf6573ffe02.jpg" alt="">
+                    <h2 class="h4">Induction</h2>
+                    <p class="small text-muted font-italic">Selling a induction which is in perfectly good condition</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<div class="footer">
+    <div class="heading">
+        <h2>Campus Cart</h2>
+    </div>
+    <div class="content">
+        <div class="links">
+            <h4>Quick links</h4>
+            <p><a href="#">Home</a></p>
+            <p><a href="#">Dashboard</a></p>
+            <p><a href="#">Profile</a></p>
+        </div>
+        <div class="details">
+            <h4 class="mobile">Mobile</h4>
+            <p><a href="#">+91-80085*****</a></p>
+            <h4 class="mail">Email</h4>
+            <p><a href="#">abcd@beepbopbup.com</a></p>
+        </div>
+    </div>
+</div>
+    </body>
 
-        </section>
-    </main>
-</body>
+    <script>
+        const icon = document.querySelector(".icon");
+        const nav = document.querySelector("nav");
+        icon.addEventListener("click", () => {
+            icon.classList.toggle("close");
+            nav.classList.toggle("show");
+        });
 
-<script>
-    const icon = document.querySelector(".icon");
-    const nav = document.querySelector("nav");
-    icon.addEventListener("click", () => {
-        icon.classList.toggle("close");
-        nav.classList.toggle("show");
-    });
-</script>
+        $(function () {
+
+// Initate masonry grid
+var $grid = $('.gallery-wrapper').masonry({
+    temSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true,
+});
+
+// Initate imagesLoaded
+$grid.imagesLoaded().progress( function() {
+    $grid.masonry('layout');
+});
+
+});
+    </script>
 
 </html>

@@ -47,5 +47,13 @@ def login():
     else:
         return render_template("login.html")
 
+@app.route('/student_mart')
+def student_mart():
+    return render_template('smart.html')
+
+@app.route('/general_stores')
+def general_stores():
+    return render_template('gstores.html')
+
 if __name__ == "__main__":
     app.run(debug=True,port=8000)
