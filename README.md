@@ -15,4 +15,4 @@ Campus Cart is a web application designed to create a centralized marketplace fo
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Flask (Python)
 - **Database:** MySQL
-- **Other Tools:** Git, GitHub, Heroku
+- **Other Tools:** Git, GitHub
