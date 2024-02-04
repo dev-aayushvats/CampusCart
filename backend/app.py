@@ -61,6 +61,10 @@ def student_mart():
 def general_stores():
     return render_template('gstores.html')
 
+@app.route('/canteens')
+def canteens():
+    return render_template('canteen.html')
+
 @app.route('/vendor_login', methods = ['POST'])
 def vendor_login():
     if request.method == 'POST':

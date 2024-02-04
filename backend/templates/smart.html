@@ -126,12 +126,13 @@
                 <form method="post" action="/dashboard">
                     <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
                 </form>
-                <li class="current"><a href="smart.html">Student Market</a></li>
+                <li class="current"><a href="#">Student Market</a></li>
                 <form method="post" action="/general_stores">
                     <li><a href="{{ url_for('general_stores') }}">General Stores</a></li>
                 </form>
-                <li><a href="cant.html">Canteens</a></li>
-                <!-- <li><a href="gstores.html">General Stores</a></li> -->
+                <form method="post" action="/canteens">
+                    <li><a href="{{ url_for('canteens') }}">Canteens</a></li>
+                </form>
             </ul>
         </section>
         <section class="content">

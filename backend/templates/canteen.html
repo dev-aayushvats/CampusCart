@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <title>Vendor Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Canteens</title>
     <style>
         * {
             margin: 0;
@@ -165,11 +166,10 @@
                 <form method="post" action="/student_market">
                     <li><a href="{{ url_for('student_mart') }}">Student Market</a></li>
                 </form>
-                <li class="current"><a href="gstores.html">General Stores</a></li>
-                <form method="post" action="/canteens">
-                    <li><a href="{{ url_for('canteens') }}">Canteens</a></li>
+                <form method="post" action="/general_stores">
+                    <li><a href="{{ url_for('general_stores') }}">General Stores</a></li>
                 </form>
-                <!-- <li><a href="smart.html">Student Market</a></li> -->
+                <li class="current"><a href="#">Canteens</a></li>
             </ul>
         </section>
         <section class="content">
@@ -177,76 +177,53 @@
             <div class="inventory">
                 <div class="inventorylist">
                     <div class="in_card">
-                        <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt=""
+                        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2019/02/chicken-biryani-recipe.jpg" alt=""
                             class="in_card-image">
                         <div class="in_card-content">
-                            <h3>Curd</h2>
+                            <h3>Just Biryani</h2>
+                                <p>Price : Rs85</p>
+                        </div>
+                    </div>
+                    <div class="in_card">
+                        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2015/07/chicken-manchurian-1.jpg" alt=""
+                            class="in_card-image">
+                        <div class="in_card-content">
+                            <h3>Paneer Manchurian</h2>
+                                <p>Price : Rs55</p>
+                        </div>
+                    </div>
+                    <div class="in_card">
+                        <img src="https://cdn2.foodviva.com/static-content/food-images/juice-recipes/grape-juice/grape-juice.jpg" alt=""
+                            class="in_card-image">
+                        <div class="in_card-content">
+                            <h3>Grape Juice</h2>
+                                <p>Price : Rs32</p>
+                        </div>
+                    </div>
+                    <div class="in_card">
+                        <img src="https://recipes.timesofindia.com/thumb/83740315.cms?width=1200&height=900" alt=""
+                            class="in_card-image">
+                        <div class="in_card-content">
+                            <h3>Sandwich</h2>
                                 <p>Price : Rs25</p>
                         </div>
                     </div>
                     <div class="in_card">
-                        <img src="https://www.quickpantry.in/cdn/shop/products/lays-potato-chips-naughty-limon-flavour_1024x1024.jpg?v=1643984428" alt=""
+                        <img src="https://mrbrownbakery.com/image/images/rEyMLsj21Ooxk5mfhdeh7bSevaLGzUtczWXVDj4u.jpeg?p=full" alt=""
                             class="in_card-image">
                         <div class="in_card-content">
-                            <h3>Lays - Chilly Limon</h2>
-                                <p>Price : Rs10</p>
+                            <h3>Burger</h2>
+                                <p>Price : Rs45</p>
                         </div>
                     </div>
                     <div class="in_card">
-                        <img src="https://images.jdmagicbox.com/quickquotes/images_main/hatsun-curd-and-yogurt-07-01-2021-069-219989318-g9nqa.jpg" alt=""
+                        <img src="https://www.stylecraze.com/wp-content/uploads/2014/09/7-Serious-Side-Effects-Of-Lime-Juice-1-267x300.jpg" alt=""
                             class="in_card-image">
                         <div class="in_card-content">
-                            <h3>Sweet Curd</h2>
-                                <p>Price : Rs10</p>
+                            <h3>Madras ka Fresh Lime</h2>
+                                <p>Price : Rs13</p>
                         </div>
                     </div>
-                    <div class="in_card">
-                        <img src="https://m.media-amazon.com/images/I/61mQ-Q7HmCL._AC_UF1000,1000_QL80_.jpg" alt=""
-                            class="in_card-image">
-                        <div class="in_card-content">
-                            <h3>Lays - Classic Salted</h2>
-                                <p>Price : Rs10</p>
-                        </div>
-                    </div>
-                    <div class="in_card">
-                        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=900/app/images/products/sliding_image/240092a.jpg?ts=1687324818" alt=""
-                            class="in_card-image">
-                        <div class="in_card-content">
-                            <h3>Lays - The OG</h2>
-                                <p>Price : Rs10 but priceless</p>
-                        </div>
-                    </div>
-                    <div class="in_card">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq3znQxqTMptLkw39mTL8XFKI5lFfyPRRyqA&usqp=CAU" alt=""
-                            class="in_card-image">
-                        <div class="in_card-content">
-                            <h3>Lays - Sizzlin' Hot</h2>
-                                <p>Price : Rs20</p>
-                        </div>
-                    </div>
-                    <div class="in_card">
-                        <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/chocolate/z/g/h/-original-imagwfxxv3u94ghh.jpeg?q=90&crop=false" alt=""
-                            class="in_card-image">
-                        <div class="in_card-content">
-                            <h3>Dairy Milk - As we're entering Feb</h2>
-                                <p>Price : Rs120</p>
-                        </div>
-                    </div>
-                    <div class="in_card">
-                        <img src="https://www.bigbasket.com/media/uploads/p/l/306926-2_4-amul-homogenised-toned-milk.jpg" alt=""
-                            class="in_card-image">
-                        <div class="in_card-content">
-                            <h3>Amul Taaza</h2>
-                                <p>Price : Rs17</p>
-                        </div>
-                    </div>
-                    <div class="in_card">
-                        <img src="https://www.hap.in/hatsun/images/lassi/HATSUN-MANGO-LASSI-140ml.jpg" alt=""
-                            class="in_card-image">
-                        <div class="in_card-content">
-                            <h3>Mango Lassi</h2>
-                                <p>Price : Rs22</p>
-                        </div>
                     </div>
                 </div>
             </div>
