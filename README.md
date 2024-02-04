@@ -16,3 +16,14 @@ Campus Cart is a web application designed to create a centralized marketplace fo
 - **Backend:** Flask (Python)
 - **Database:** MySQL
 - **Other Tools:** Git, GitHub, Heroku
+
+## How to run
+- Clone the repository to your local machine.
+- Install mySQL database.
+- Install flask and mySQLDB library.
+- Currently, the database is hard-coded on our machines. To run, you must initialise the database with all store items on your local machines.
+- Run the following python program
+```python
+python app.py
+```
+- This starts the web platform!
