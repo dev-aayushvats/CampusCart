@@ -156,17 +156,17 @@
         <section class="content">
             <h2>Your Inventory</h2>
             <div class="inventory">
-                <form action="" class="updatevalues">
+                <form action="/update_inventory" method="post" class="updatevalues">
                     <div class="inventorylist">
                         <div class="in_card">
-                            <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png"
-                                alt="" class="in_card-image">
+                            <img src="https://5.imimg.com/data5/BM/VA/MC/GLADMIN-10211396/selection-080-500x500.png" alt="" class="in_card-image">
                             <div class="in_card-content">
-                                <h3>Curd</h2>
-                                    <p>Remaining Quantity: <input type="text" name="curd" placeholder="21"></p>
+                                <h3>Curd</h3>
+                                <p>Remaining Quantity: <input type="text" name="curd" placeholder="21"></p>
                             </div>
                         </div>
-                        <!-- <div class="in_card">
+                        <!-- Additional inventory items go here -->
+                        <div class="in_card">
                             <img src="https://www.quickpantry.in/cdn/shop/products/lays-potato-chips-naughty-limon-flavour_1024x1024.jpg?v=1643984428"
                                 alt="" class="in_card-image">
                             <div class="in_card-content">
@@ -228,16 +228,11 @@
                             <div class="in_card-content">
                                 <h3>Mango Lassi</h2>
                                     <p>Remaining Quantity: <input type="text" name="mango_lassi" placeholder="8"></p>
-                            </div> -->
-                        <!-- </div> -->
-                        <form action="/update_inventory" method="post" class="updatevalues">
-                            <!-- Inventory items go here -->
-                            <button type="submit" class="update">Update Inventory</button>
-                        </form>                        
+                            </div> 
+                        </div>
+                        <button type="submit" class="update">Update Inventory</button>
+                    </div>
                 </form>
-            </div>
-            </div>
-            </div>
             </div>
         </section>
     </main>
